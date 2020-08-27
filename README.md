@@ -7,8 +7,8 @@ Used Python version 3.7
 
 ## Modules Required
 
-    BeautifulSoup (https://pypi.org/project/beautifulsoup4/)
-    requests
+- BeautifulSoup (https://pypi.org/project/beautifulsoup4/)
+- requests
 
 ## Scrape Process
 
