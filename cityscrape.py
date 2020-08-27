@@ -50,6 +50,7 @@ df3 = remove_col(df3)
 df_final = df1.append(df2)
 df_final = df_final.append(df3)
 df_final = df_final.rename(columns={0:"City", 1:"Cases"})
+df_final = df_final.reset_index(drop=True)
 
 del df, df1, df2, df3
 
