@@ -9,6 +9,7 @@ Used Python version 3.7
 
 - BeautifulSoup (https://pypi.org/project/beautifulsoup4/)
 - requests
+- Pandas
 
 ## Scrape Process
 
