@@ -9,7 +9,8 @@ import requests
 import pandas as pd
 
 # Pull Data
-resp = requests.get('http://publichealth.lacounty.gov/phcommon/public/media/mediapubhpdetail.cfm?prid=2614')
+NewsURL = 'http://publichealth.lacounty.gov/phcommon/public/media/mediapubhpdetail.cfm?prid=2615'
+resp = requests.get(NewsURL)
 txt = resp.text
 soup = BeautifulSoup(txt, 'lxml')
 
@@ -51,7 +52,7 @@ df_final = df_final.rename(columns={0:"City", 1:"Cases"})
 df_final = df_final.reset_index(drop=True)
 
 # Removing variables
-del df, df1, df2, df3, resp, txt
+del df, df1, df2, df3, resp, txt, NewsURL
 
 # Create Excel File
 df_final.to_excel("citycases.xlsx")
